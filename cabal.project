@@ -1,0 +1,18 @@
+packages: 
+  ./gloss/gloss
+  ./gloss/gloss-examples
+  ./gloss/gloss-raster
+  ./gloss/gloss-algorithms
+  --./primitive
+  --./hsc2hs
+
+--constraints: hsc2hs < 0.68.4
+library-profiling: False
+library-vanilla: True
+profiling: False
+executable-profiling: False
+with-compiler: /opt/exp/ghc/ghc-gc/inplace/bin/ghc-stage2
+tests: False
+
+package gloss-examples
+    ghc-options: -debug
